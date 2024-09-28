@@ -15,7 +15,8 @@ const responses = {};
 
 var name = "temp";
 var  account1 ="temp";
-var  account1total = 0;
+var  accountTotal1 = 0;
+var account2total = 0;
 console.log(name);
 
 function getName() {
@@ -37,18 +38,47 @@ function getAccount1() {
 }
 
 function getAccount1Total() {
-    rl.question("Enter the ammount of money in first account: ", (account1total) => {
-        responses.account1total = parseFloat(account1total);
+    rl.question("Enter the ammount of money in first account: ", (accountTotal1) => {
+        //globalAccount1Total = account1total;
+        responses.account1total = parseFloat(accountTotal1);
         saveResponses();
-        rl.close();
-        readBack();
+        getAccount2();     
     })
 }
 
+function getAccount2() {
+    rl.question("Enter name of second Account: ", (account2) => {
+        responses.account2 = account2;
+        saveResponses();
+        getAccountTotal2();
+    })
+}
+
+function getAccountTotal2() {
+    rl.question("Enter the ammount of money in second account: ", (accountTotal2) => {
+        responses.account2total = parseFloat(accountTotal2);
+        responses.userTotal = responses.account1total + responses.account2total;
+        saveResponses();
+        createCategories();     
+    })
+}
+
+
 function saveResponses() {
-    fs.writeFileSync('userData.json', JSON.stringify(responses, null, 2), 'utf8');
+    // Read the existing data
+    let existingData = {};
+    if (fs.existsSync('userData.json')) {
+        const data = fs.readFileSync('userData.json', 'utf8');
+        existingData = JSON.parse(data);
+    }
+
+    // Merge new responses with existing data
+    const updatedData = { ...existingData, ...responses };
+
+    // Write the updated data back to the file
+    fs.writeFileSync('userData.json', JSON.stringify(updatedData, null, 2), 'utf8');
     console.log('Response saved.');
-    
+    console.log('');
 }
 getName();
 
@@ -69,10 +99,24 @@ function readBack(){
             const jsonName = userData.name;
             const jsonAccount1 = userData.account1;
             const jsonAccount1total = userData.account1total;
+            const jsonAccount2 = userData.account2;
+            const jsonAccount2total = userData.account2total;
+            const jsonFundTotal = userData.userTotal;
 
             console.log('Name:', jsonName);
-            console.log('Account1:', jsonAccount1);
-            console.log('Total:', jsonAccount1total);
+            console.log('Account 1 Name:', jsonAccount1);
+            console.log('Account 1 Total:', jsonAccount1total);
+            console.log('Account 2 Name:', jsonAccount2);
+            console.log('Account 2 Total:', jsonAccount2total);
+            console.log('Total Funds:', jsonFundTotal);
+
+            if (userData.spendingCategories) {
+                console.log('Spending Categories for the month:');
+                userData.spendingCategories.forEach((category, index) => {
+                    //console.log(`${index + 1}. ${category.category}: ${category.amount}`);
+                    console.log(`${category.category}: ${category.amount}`);
+                });
+            }
 
         } catch (jsonErr) {
             console.log('Error parsing JSON:', jsonErr);
@@ -80,12 +124,23 @@ function readBack(){
     });
 }
 
-function createCatagories(){
+function createCategories(){
     
-    console.log
-
-    {catagories: 'food'}
-
+    rl.question("Create new purchase category (enter 'n' to stop): ", (cat) => {
+        if(cat === 'n') {
+            rl.close();
+            readBack();
+        } else{
+            rl.question("Enter amount for " + cat + ":", (amount) => {
+                if (!responses.spendingCategories) {
+                    responses.spendingCategories = [];
+                }
+                responses.spendingCategories.push({ category: cat, amount: parseFloat(amount) });
+                saveResponses();
+                createCategories();
+            });
+        }
+    });
 }
 
 

@@ -1,5 +1,18 @@
 {
   "name": "king",
-  "account1": "tomp",
-  "account1total": 14356
+  "account1": "green",
+  "account1total": 23456.34,
+  "spendingCategories": [
+    {
+      "category": "food",
+      "amount": 500.67
+    },
+    {
+      "category": "er",
+      "amount": 12
+    }
+  ],
+  "account2": "blue",
+  "account2total": 345.89,
+  "userTotal": 23802.23
 }
