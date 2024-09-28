@@ -26,8 +26,14 @@ html {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
-  // background-color: rgb(255, 255, 255);
+  background: url("/src/assets/fiuCampusImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //   filter: brightness(40%);
+
+  background-attachment: fixed;
+  background-size: 100%;
+
   color: #e4e4e4;
 }
 .container {
@@ -114,4 +120,8 @@ body {
 
     transition: 0ms ease-in-out;
   }
+}
+
+.brightnessWorkaround {
+  background-color: rgba(0, 0, 0, 0.4);
 }
