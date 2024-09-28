@@ -102,6 +102,7 @@ function readBack(){
             const jsonAccount2 = userData.account2;
             const jsonAccount2total = userData.account2total;
             const jsonFundTotal = userData.userTotal;
+            const jsonCat = userData.spendingCategories;
 
             console.log('Name:', jsonName);
             console.log('Account 1 Name:', jsonAccount1);
@@ -110,6 +111,7 @@ function readBack(){
             console.log('Account 2 Total:', jsonAccount2total);
             console.log('Total Funds:', jsonFundTotal);
 
+            console.log('yuy Funds:', jsonCat);
             if (userData.spendingCategories) {
                 console.log('Spending Categories for the month:');
                 userData.spendingCategories.forEach((category, index) => {

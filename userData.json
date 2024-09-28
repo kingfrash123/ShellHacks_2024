@@ -1,18 +1,70 @@
 {
-  "name": "king",
-  "account1": "green",
-  "account1total": 23456.34,
+  "name": "kingp",
+  "account1": "white",
+  "account1total": 3000.67,
+  "account2": "orange",
+  "account2total": 506.34,
+  "userTotal": 3507.01,
   "spendingCategories": [
     {
       "category": "food",
-      "amount": 500.67
+      "amount": 233.5
     },
     {
-      "category": "er",
-      "amount": 12
+      "category": "transport",
+      "amount": 45
     }
   ],
-  "account2": "blue",
-  "account2total": 345.89,
-  "userTotal": 23802.23
+  "transactions": [
+    {
+      "cost": 26.39,
+      "category": "food",
+      "name": "Company E"
+    },
+    {
+      "cost": 59.95,
+      "category": "food",
+      "name": "Company A"
+    },
+    {
+      "cost": 17.57,
+      "category": "food",
+      "name": "Company A"
+    },
+    {
+      "cost": 24.69,
+      "category": "food",
+      "name": "Company D"
+    },
+    {
+      "cost": 35.76,
+      "category": "food",
+      "name": "Company A"
+    },
+    {
+      "cost": 4.55,
+      "category": "transport",
+      "name": "Company D"
+    },
+    {
+      "cost": 10.41,
+      "category": "transport",
+      "name": "Company D"
+    },
+    {
+      "cost": 6.28,
+      "category": "transport",
+      "name": "Company B"
+    },
+    {
+      "cost": 3.77,
+      "category": "transport",
+      "name": "Company E"
+    },
+    {
+      "cost": 8.04,
+      "category": "transport",
+      "name": "Company B"
+    }
+  ]
 }
