@@ -1,0 +1,21 @@
+.finances {
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6.4rem;
+
+    gap: 4rem;
+  }
+
+  &__dataStyles {
+    width: 100%;
+    height: 400px;
+  }
+
+  .finances__graphs {
+    background-color: rgba(0, 11, 19, 0.7);
+
+    // border-color: #000;
+    // border-radius: 5px;
+  }
+}

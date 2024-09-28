@@ -726,4 +726,18 @@ body {
 
 .submit:active {
   background-color: #06b;
+}
+
+.finances__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 6.4rem;
+  gap: 4rem;
+}
+.finances__dataStyles {
+  width: 100%;
+  height: 400px;
+}
+.finances .finances__graphs {
+  background-color: rgba(0, 11, 19, 0.7);
 }/*# sourceMappingURL=style.css.map */
