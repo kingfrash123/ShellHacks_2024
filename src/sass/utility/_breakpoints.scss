@@ -1,0 +1,20 @@
+$breakpoints-up: (
+  "desktop": 100em,
+  "desktopSmall": 85em,
+  "tablets": 56em,
+  "mobile": 43.75em,
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+/* 1600/16 = 87.5 */
+@media (max-width: 100em) {
+}
+
+/* 1400/16 = 87.5 */
+@media (max-width: 88em) {
+}
