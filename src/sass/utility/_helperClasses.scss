@@ -1,0 +1,225 @@
+.grid-display {
+  display: grid;
+}
+
+.flex-display {
+  display: flex;
+}
+
+.inline-display {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Classes I used to hide menus when changing viewport width using Media Queries */
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-flex-display {
+  display: flex;
+}
+.mobile-flow-remove {
+  position: absolute;
+}
+
+/* /////////////////// */
+
+.flow-remove {
+  position: absolute;
+}
+
+.flow-add {
+  position: relative;
+}
+
+/* /////////////////// */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* /////////////////// */
+
+/* Colors for platforms */
+
+.github {
+  background-color: #0a0a0a;
+
+  &:hover {
+    background-color: #f0e7e7;
+    color: #0a0a0a;
+  }
+
+  &:active {
+    background-color: #beb5b5;
+    color: #575454;
+
+    // color: #727171;
+  }
+}
+
+.patreon {
+  background-color: #f96854;
+
+  &:hover {
+    background-color: #052d49;
+    color: #f96854;
+  }
+
+  &:active {
+    background-color: #021725;
+    color: #f3624f;
+
+    // color: #727171;
+  }
+}
+
+.youtube {
+  background-color: #cd201f;
+
+  &:hover {
+    color: #ff5757;
+  }
+
+  &:active {
+    color: #bd4040;
+
+    // color: #727171;
+  }
+}
+
+.spotify {
+  background-image: linear-gradient(to bottom right, #1ed760, #0a0a0a);
+
+  &:hover {
+    color: #0a0a0a;
+  }
+
+  &:active {
+    color: #727171;
+  }
+
+  @media (max-width: 53.75em) {
+    grid-column: 2;
+  }
+}
+
+.instagram {
+  background-image: linear-gradient(
+    to bottom right,
+    #4c68d7,
+    #cd486b,
+    #fbad50,
+    #fccc63
+  );
+
+  &:hover {
+    color: #383232;
+  }
+
+  &:active {
+    color: #080707;
+  }
+}
+
+.soundcloud {
+  background-color: #ff8800;
+
+  &:hover {
+    color: #ff8800;
+  }
+
+  &:active {
+    color: #e27900;
+  }
+}
+
+.twitter {
+  background-color: #1da1f2;
+
+  &:hover {
+    color: #1da1f2;
+  }
+
+  &:active {
+    color: #1a93df;
+  }
+}
+
+/* /////////////////// */
+
+/* Colors for tech used */
+
+.react {
+  background-color: #20232a;
+  color: #1da1f2;
+  border-radius: 3px;
+}
+
+.javascript {
+  background-color: #f0db4f;
+  color: #323330;
+  border-radius: 3px;
+}
+
+.scss {
+  background-color: #f7e3ed;
+  color: #cc6699;
+  border-radius: 3px;
+}
+
+.css {
+  background-color: #2965f1;
+  color: #ebebeb;
+  border-radius: 3px;
+}
+
+.hyperTextMarkupLanguage {
+  background-color: #f06529;
+  color: #ebebeb;
+  border-radius: 3px;
+}
+
+.cplusplus {
+  background-color: #000000;
+  color: #25b620;
+  border-radius: 3px;
+}
+
+.python {
+  background-color: #4584b6;
+  color: #ffde57;
+  border-radius: 3px;
+}
+
+.sql {
+  background-color: #00758f;
+  color: #f29111;
+  border-radius: 3px;
+}
+
+.gdscript {
+  background-color: #0b8384;
+  color: #e4e9ec;
+  border-radius: 3px;
+}
+
+.lua {
+  background-color: #130879;
+  color: #e4e9ec;
+  border-radius: 3px;
+}

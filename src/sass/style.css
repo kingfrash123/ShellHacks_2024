@@ -1,0 +1,402 @@
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Audiowide", sans-serif;
+}
+
+/*
+*:focus {
+  outline: none;
+  border: 2px dotted #222;
+}
+*/
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #e4e4e4;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  /* padding-left: 6.4rem;
+      padding-right: 6.4rem; */
+}
+
+/*
+.miniCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 2rem;
+
+  &__link img {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+}
+*/
+.btn {
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0px 8px 14px 1px rgba(175, 175, 175, 0.5);
+  color: #fff;
+  transition: 300ms all ease-in-out;
+  border-radius: 8px;
+  border: none;
+  font-size: 3rem;
+  padding: 1.2rem 2.4rem;
+}
+.btn:hover {
+  color: #ff5757;
+  box-shadow: 0 0 0 0.4rem rgba(255, 255, 255, 0.85);
+}
+.btn:active {
+  color: #bd4040;
+  box-shadow: 0 0 0 0.4rem rgba(153, 153, 153, 0.5);
+  transition: 0ms ease-in-out;
+}
+@media (max-width: 38.125em) {
+  .btn {
+    font-size: 2.4rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.platformBtn {
+  box-shadow: 0px 8px 14px 1px rgba(175, 175, 175, 0.5);
+  color: #fff;
+  transition: 300ms all ease-in-out;
+  border-radius: 8px;
+  border: none;
+  font-size: 3rem;
+  padding: 1.2rem 2.4rem;
+}
+.platformBtn:hover {
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0 0 0 0.4rem rgba(255, 255, 255, 0.85);
+}
+.platformBtn:active {
+  box-shadow: 0 0 0 0.4rem rgba(153, 153, 153, 0.5);
+  transition: 0ms ease-in-out;
+}
+
+/* 1600/16 = 87.5 */
+/* 1400/16 = 87.5 */
+.grid-display {
+  display: grid;
+}
+
+.flex-display {
+  display: flex;
+}
+
+.inline-display {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Classes I used to hide menus when changing viewport width using Media Queries */
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-flex-display {
+  display: flex;
+}
+
+.mobile-flow-remove {
+  position: absolute;
+}
+
+/* /////////////////// */
+.flow-remove {
+  position: absolute;
+}
+
+.flow-add {
+  position: relative;
+}
+
+/* /////////////////// */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* /////////////////// */
+/* Colors for platforms */
+.github {
+  background-color: #0a0a0a;
+}
+.github:hover {
+  background-color: #f0e7e7;
+  color: #0a0a0a;
+}
+.github:active {
+  background-color: #beb5b5;
+  color: #575454;
+}
+
+.patreon {
+  background-color: #f96854;
+}
+.patreon:hover {
+  background-color: #052d49;
+  color: #f96854;
+}
+.patreon:active {
+  background-color: #021725;
+  color: #f3624f;
+}
+
+.youtube {
+  background-color: #cd201f;
+}
+.youtube:hover {
+  color: #ff5757;
+}
+.youtube:active {
+  color: #bd4040;
+}
+
+.spotify {
+  background-image: linear-gradient(to bottom right, #1ed760, #0a0a0a);
+}
+.spotify:hover {
+  color: #0a0a0a;
+}
+.spotify:active {
+  color: #727171;
+}
+@media (max-width: 53.75em) {
+  .spotify {
+    grid-column: 2;
+  }
+}
+
+.instagram {
+  background-image: linear-gradient(to bottom right, #4c68d7, #cd486b, #fbad50, #fccc63);
+}
+.instagram:hover {
+  color: #383232;
+}
+.instagram:active {
+  color: #080707;
+}
+
+.soundcloud {
+  background-color: #ff8800;
+}
+.soundcloud:hover {
+  color: #ff8800;
+}
+.soundcloud:active {
+  color: #e27900;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.twitter:active {
+  color: #1a93df;
+}
+
+/* /////////////////// */
+/* Colors for tech used */
+.react {
+  background-color: #20232a;
+  color: #1da1f2;
+  border-radius: 3px;
+}
+
+.javascript {
+  background-color: #f0db4f;
+  color: #323330;
+  border-radius: 3px;
+}
+
+.scss {
+  background-color: #f7e3ed;
+  color: #cc6699;
+  border-radius: 3px;
+}
+
+.css {
+  background-color: #2965f1;
+  color: #ebebeb;
+  border-radius: 3px;
+}
+
+.hyperTextMarkupLanguage {
+  background-color: #f06529;
+  color: #ebebeb;
+  border-radius: 3px;
+}
+
+.cplusplus {
+  background-color: #000000;
+  color: #25b620;
+  border-radius: 3px;
+}
+
+.python {
+  background-color: #4584b6;
+  color: #ffde57;
+  border-radius: 3px;
+}
+
+.sql {
+  background-color: #00758f;
+  color: #f29111;
+  border-radius: 3px;
+}
+
+.gdscript {
+  background-color: #0b8384;
+  color: #e4e9ec;
+  border-radius: 3px;
+}
+
+.lua {
+  background-color: #130879;
+  color: #e4e9ec;
+  border-radius: 3px;
+}
+
+.lds-spinner,
+.lds-spinner div,
+.lds-spinner div:after {
+  box-sizing: border-box;
+}
+
+.lds-spinner {
+  color: currentColor;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3.2px;
+  left: 36.8px;
+  width: 6.4px;
+  height: 17.6px;
+  border-radius: 20%;
+  background: currentColor;
+}
+
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loginHeaderText {
+  font-size: 2.4rem;
+}
+
+.white {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
