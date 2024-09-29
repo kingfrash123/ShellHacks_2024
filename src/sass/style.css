@@ -104,6 +104,10 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.display-none {
+  display: none;
+}
+
 .footer {
   background-color: rgba(0, 11, 19, 0.7);
   border-top: 2.5px solid rgba(6, 218, 255, 0.3);
@@ -728,9 +732,32 @@ body {
   background-color: #06b;
 }
 
+.dashboardContainer {
+  align-items: center;
+  justify-content: center;
+  gap: 12.4rem;
+}
+
+.dashboardHeaderText {
+  font-size: 9rem;
+  padding-left: 12.8rem;
+  padding-top: 9.6rem;
+  text-shadow: rgb(21, 23, 43) 1px 0 10px;
+}
+
+.finances {
+  /*
+    .canvas {
+      height: 100%;
+      width: 400px;
+    }
+  */
+}
 .finances__data {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 6.4rem;
   gap: 4rem;
 }
@@ -738,6 +765,79 @@ body {
   width: 100%;
   height: 400px;
 }
-.finances .finances__graphs {
+.finances__graphs {
+  border-radius: 30px;
   background-color: rgba(0, 11, 19, 0.7);
+}
+
+/* 
+Not sure why the pie chart has styles when 
+"finances__pieGraph is commented out
+*/
+/*
+.finances__pieGraph {
+  height: 500px;
+}
+*/
+.limit__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 3.6rem;
+}
+.limitTerminal {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.limit__form {
+  padding: 7rem;
+  padding-bottom: 4rem;
+  border-radius: 20px;
+  background-color: rgba(0, 11, 19, 0.7);
+  box-shadow: 0 0 0 0.3rem rgba(21, 23, 43, 0.7);
+  max-width: 50rem;
+}
+.limit .marginBottomHelper {
+  margin-bottom: 2rem;
+}
+.limit .marginBottomHelperNone {
+  margin-bottom: 0rem;
+}
+.limit__HeaderText {
+  font-size: 3.6rem;
+  padding-bottom: 0em;
+}
+.limit__company, .limit__num {
+  margin-top: 4.8rem;
+}
+.limit__formInputs {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 1.8rem;
+  height: 5rem;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 80%;
+}
+.limit__button {
+  background-color: rgb(214, 214, 214);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(1, 1, 1);
+  cursor: pointer;
+  font-size: 1.8rem;
+  height: 50px;
+  margin-top: 3.8rem;
+  text-align: center;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+.limit {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: 1fr 1fr;
+    margin-top: 0.8rem;
+    height: 70rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // align-self: center;
+    // justify-self: center;
+    width: 100%;
+    // margin-left: 5rem;
+
+    font-size: 3.6rem;
+  }
+
+  &Terminal {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  &__form {
+    padding: 7rem;
+    padding-bottom: 4rem;
+    border-radius: 20px;
+    background-color: rgba(0, 11, 19, 0.7);
+
+    // box-shadow: #15172b 1 0 10px;
+    box-shadow: 0 0 0 0.3rem rgba(21, 23, 43, 0.7);
+
+    max-width: 50rem;
+  }
+  .marginBottomHelper {
+    margin-bottom: 2rem;
+  }
+
+  .marginBottomHelperNone {
+    margin-bottom: 0rem;
+  }
+  &__form:hover {
+  }
+
+  &__HeaderText {
+    // color: #eee;
+    font-size: 3.6rem;
+    // font-weight: 600;
+    padding-bottom: 0em;
+  }
+
+  &__company,
+  &__num {
+    margin-top: 4.8rem;
+  }
+
+  &__label {
+    // margin-bottom: 2rem;
+  }
+
+  &__formInputs {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 1.8rem;
+    height: 5rem;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 80%;
+  }
+
+  &__button {
+    background-color: rgb(214, 214, 214);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 50px;
+    margin-top: 3.8rem;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+}

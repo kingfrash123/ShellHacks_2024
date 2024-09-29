@@ -1,7 +1,10 @@
 .finances {
   &__data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // grid-template-columns: 1fr 1fr;
     padding-top: 6.4rem;
 
     gap: 4rem;
@@ -12,10 +15,28 @@
     height: 400px;
   }
 
-  .finances__graphs {
+  /*
+  .canvas {
+    height: 100%;
+    width: 400px;
+  }
+*/
+  &__graphs {
+    border-radius: 30px;
     background-color: rgba(0, 11, 19, 0.7);
 
     // border-color: #000;
     // border-radius: 5px;
   }
 }
+
+/* 
+Not sure why the pie chart has styles when 
+"finances__pieGraph is commented out
+*/
+
+/*
+.finances__pieGraph {
+  height: 500px;
+}
+*/

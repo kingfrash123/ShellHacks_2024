@@ -4,7 +4,7 @@ import BarChart from "/src/components/dashboardUI/BarChart.jsx";
 import PieChart from "/src/components/dashboardUI/PieChart.jsx";
 function Finances() {
   return (
-    <div className="brightnessWorkaround">
+    <div className="">
       <div className="finances__data">
         <div className="finances__dataStyles">
           <LineGraph />
