@@ -10,26 +10,36 @@ export const lineChartData = {
   ],
   datasets: [
     {
-      label: "Steps",
+      label: "Discover",
       data: [3000, 5000, 6000, 8000, 7000, 9000],
       borderColor: "rgb(75, 192, 192)",
-      fontColor: "rgb(0,0,0)",
+      fontColor: "rgb(255, 255, 255)",
     },
     {
-      label: "OtherSteps",
+      label: "Ally",
       data: [1000, 9000, 2000, 3000, 700, 5000],
       borderColor: "rgb(1, 1, 192)",
-      fontColor: ["rgb(0,0,0)", "rgb(0,0,0)", "rgb(0,0,0)", "rgb(0,0,0)"],
+      fontColor: [
+        "rgb(255, 255, 255)",
+        "rgb(255, 255, 255)",
+        "rgb(255, 255, 255)",
+        "rgb(255, 255, 255)",
+      ],
     },
   ],
 };
 
+/*
+Replace "food", "games", etc with the user data. 
+You may need to look into props for react
+*/
 export const barChartData = {
-  labels: ["Rent", "Groceries", "Utilities", "Entertainment", "Transportation"],
+  labels: ["food", "clothes", "games", "movies"],
   datasets: [
     {
       label: "Expenses",
       data: [1200, 300, 150, 180, 100],
+      fontColor: "rgb(255, 255, 255)",
       backgroundColor: [
         "rgba(255,99,132,1)",
         "rgba(54,162,235,1)",

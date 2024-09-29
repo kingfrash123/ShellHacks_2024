@@ -4,10 +4,10 @@ function Header() {
   return (
     <nav className="nav container">
       <div className="nav__container">
-        <p className="nav__logoText">Nomisma</p>
-        <Link to="/src/pages/Dashboard.jsx" className="nav__link">
+        <p className="nav__logoText">Mixn</p>
+        {/* <Link to="/src/pages/Dashboard.jsx" className="nav__link">
           Login
-        </Link>
+        </Link> */}
         {/* {navigationArray.map({ title, link })} => (
         <Link key={link} to={link}>
           <a className="nav__loginText" href="">
