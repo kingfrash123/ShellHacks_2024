@@ -6,17 +6,10 @@ function Footer() {
           <h3>Developers</h3>
           <ul className="footer__list">
             <li>
-              <a
-                href="#"
-                className="footer__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Front End - Joshua Washington
-              </a>
+              <p className="footer__link">Front End - Joshua Washington</p>
             </li>
             <li>
-              <a className="footer__link"> Back End - King Primo</a>
+              <p className="footer__link"> Back End - King Primo</p>
             </li>
           </ul>
         </div>
@@ -26,7 +19,7 @@ function Footer() {
             <ul className="footer__list">
               <li>
                 <a
-                  href=""
+                  href="https://react.dev/"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -36,7 +29,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href=""
+                  href="https://sass-lang.com/"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +39,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href=""
+                  href="https://www.w3.org/Style/CSS/Overview.en.html"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -56,7 +49,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href=""
+                  href="https://html.com/"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,7 +61,7 @@ function Footer() {
             <ul className="footer__list">
               <li>
                 <a
-                  href=""
+                  href="https://nodejs.org/en"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -78,22 +71,12 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href=""
+                  href="https://expressjs.com/"
                   className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  insert text
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  className="footer__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  insert text
+                  Express
                 </a>
               </li>
             </ul>

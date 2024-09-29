@@ -1,17 +1,39 @@
 .finances {
+  padding-bottom: 12.8rem;
   &__data {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
-    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: 6.4rem;
 
     gap: 4rem;
   }
 
+  &__dataTwo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 6.4rem;
+
+    gap: 4rem;
+
+    @media (max-width: 89.5em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 65.875em) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 38.125em) {
+      //   gap: 1rem;
+    }
+  }
   &__dataStyles {
-    width: 100%;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
     height: 400px;
   }
 
