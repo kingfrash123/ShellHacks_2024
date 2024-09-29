@@ -1,70 +1,206 @@
 {
-  "name": "kingp",
-  "account1": "white",
-  "account1total": 3000.67,
-  "account2": "orange",
-  "account2total": 506.34,
-  "userTotal": 3507.01,
+  "name": "josh",
+  "account1": "black",
+  "account1total": 190.98,
+  "account2": "green",
+  "account2total": 3866.67,
+  "userTotal": 4057.65,
   "spendingCategories": [
     {
       "category": "food",
-      "amount": 233.5
+      "amount": 300
     },
     {
-      "category": "transport",
+      "category": "cloths",
       "amount": 45
+    },
+    {
+      "category": "games",
+      "amount": 60
+    },
+    {
+      "category": "movies",
+      "amount": 20
     }
   ],
   "transactions": [
     {
-      "cost": 26.39,
+      "name": "Company E",
       "category": "food",
-      "name": "Company E"
+      "cost": 52.62
     },
     {
-      "cost": 59.95,
+      "name": "Company A",
       "category": "food",
-      "name": "Company A"
+      "cost": 17.96
     },
     {
-      "cost": 17.57,
+      "name": "Company E",
       "category": "food",
-      "name": "Company A"
+      "cost": 29.42
     },
     {
-      "cost": 24.69,
+      "name": "Company D",
       "category": "food",
-      "name": "Company D"
+      "cost": 87.91
     },
     {
-      "cost": 35.76,
+      "name": "Company A",
       "category": "food",
-      "name": "Company A"
+      "cost": 8.25
     },
     {
-      "cost": 4.55,
-      "category": "transport",
-      "name": "Company D"
+      "name": "Company A",
+      "category": "cloths",
+      "cost": 0.88
     },
     {
-      "cost": 10.41,
-      "category": "transport",
-      "name": "Company D"
+      "name": "Company C",
+      "category": "cloths",
+      "cost": 7.81
     },
     {
-      "cost": 6.28,
-      "category": "transport",
-      "name": "Company B"
+      "name": "Company B",
+      "category": "cloths",
+      "cost": 1.71
     },
     {
-      "cost": 3.77,
-      "category": "transport",
-      "name": "Company E"
+      "name": "Company B",
+      "category": "cloths",
+      "cost": 1.04
     },
     {
-      "cost": 8.04,
-      "category": "transport",
-      "name": "Company B"
+      "name": "Company A",
+      "category": "cloths",
+      "cost": 9.09
+    },
+    {
+      "name": "Company D",
+      "category": "games",
+      "cost": 1.06
+    },
+    {
+      "name": "Company D",
+      "category": "games",
+      "cost": 1.68
+    },
+    {
+      "name": "Company C",
+      "category": "games",
+      "cost": 3.9
+    },
+    {
+      "name": "Company B",
+      "category": "games",
+      "cost": 15.04
+    },
+    {
+      "name": "Company B",
+      "category": "games",
+      "cost": 15.52
+    },
+    {
+      "name": "Company D",
+      "category": "movies",
+      "cost": 4.69
+    },
+    {
+      "name": "Company A",
+      "category": "movies",
+      "cost": 2.31
+    },
+    {
+      "name": "Company B",
+      "category": "movies",
+      "cost": 5.56
+    },
+    {
+      "name": "Company E",
+      "category": "movies",
+      "cost": 3.8
+    },
+    {
+      "name": "Company C",
+      "category": "movies",
+      "cost": 0.76
+    },
+    {
+      "account": "1",
+      "name": "funk",
+      "category": "food",
+      "cost": 56
+    },
+    {
+      "account": "1",
+      "name": "junk",
+      "category": "food",
+      "cost": 45
+    },
+    {
+      "account": "1",
+      "name": "shellhacks",
+      "category": "65",
+      "cost": 2444
+    },
+    {
+      "account": "1",
+      "name": "joe",
+      "category": "food",
+      "cost": 45
+    },
+    {
+      "account": "2",
+      "name": "dunk",
+      "category": "food",
+      "cost": 56
+    },
+    {
+      "account": "2",
+      "name": "fot",
+      "category": "food",
+      "cost": 56
+    },
+    {
+      "account": "2",
+      "name": "goof",
+      "category": "food",
+      "cost": 344
+    },
+    {
+      "account": "1",
+      "name": "ffo",
+      "category": "food",
+      "cost": 45
+    },
+    {
+      "account": "1",
+      "name": "doof",
+      "category": "food",
+      "cost": 34
+    },
+    {
+      "account": "1",
+      "name": "op",
+      "category": "food",
+      "cost": 45
+    },
+    {
+      "account": "2",
+      "name": "soup",
+      "category": "food",
+      "cost": 56
+    },
+    {
+      "account": "2",
+      "name": "dop food",
+      "category": "food",
+      "cost": 600
+    },
+    {
+      "account": "2",
+      "name": "doe",
+      "category": "food",
+      "cost": 76
     }
   ]
 }

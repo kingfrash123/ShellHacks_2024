@@ -34,9 +34,9 @@ function generateTransactions(categories) {
 
             // Create a transaction object
             const transaction = {
-                cost: parseFloat(randomCost), // Convert to float for consistency
+                name: randomName,
                 category: category.category,
-                name: randomName
+                cost: parseFloat(randomCost), // Convert to float for consistency
             };
 
             // Add the transaction to the array
