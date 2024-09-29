@@ -60,7 +60,7 @@ function Hero() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit" className="hero__loginButton">
+            <button type="submit" className="limit__button">
               Login
             </button>
           </form>

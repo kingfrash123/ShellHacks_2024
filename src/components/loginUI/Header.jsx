@@ -4,7 +4,7 @@ function Header() {
   return (
     <nav className="nav container">
       <div className="nav__container">
-        <p className="nav__logoText">Nomisma</p>
+        <p className="nav__logoText">Mixn</p>
         <Link to="/src/pages/Dashboard.jsx" className="nav__link">
           Login
         </Link>

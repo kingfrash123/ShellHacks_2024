@@ -1,0 +1,39 @@
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4.4rem;
+
+  &__userHeader {
+    margin-bottom: 2.4rem;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 16.4rem;
+
+    font-size: 3rem;
+    border-radius: 20px;
+    background-color: rgba(0, 11, 19, 0.7);
+    padding: 3.2rem;
+  }
+
+  &__accountHeader {
+    text-align: center;
+  }
+
+  &__accountInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    font-size: 3rem;
+    border-radius: 5px;
+    border: solid rgba(6, 218, 255, 0.3);
+    background-color: rgba(0, 11, 19, 0.7);
+    margin-bottom: 2.4rem;
+    padding: 1rem;
+  }
+  &__accountInfo {
+  }
+}
