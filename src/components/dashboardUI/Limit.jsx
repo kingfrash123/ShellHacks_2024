@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LimitTerminal from "./LimitTerminal";
-import {createCategories} from "../../backend/testBack";
+import { createCategories } from "/ShellHacks_backend/testBack";
 
 const limitForm = document.querySelector(".limit__form");
 const limitContainer = document.querySelector(".limit__container");
