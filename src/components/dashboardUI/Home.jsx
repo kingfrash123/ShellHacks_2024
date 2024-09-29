@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 function Home() {
   const [data, setData] = useState(null);
   const [isLoading, setisLoading] = useState(true);
-
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("/userData.json");

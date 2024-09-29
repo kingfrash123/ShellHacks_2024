@@ -21,7 +21,33 @@ ChartJS.register(
 );
 
 function BarChart() {
-  const options = {};
+  const options = {
+    maintainAspectRatio: false,
+    scales: {
+      yAxes: {
+        grid: {
+          drawBorder: true,
+          color: "#FFFFFF",
+        },
+        ticks: {
+          beginAtZero: true,
+          color: "white",
+          fontSize: 12,
+        },
+      },
+      xAxes: {
+        grid: {
+          drawBorder: true,
+          color: "#FFFFFF",
+        },
+        ticks: {
+          beginAtZero: true,
+          color: "white",
+          fontSize: 12,
+        },
+      },
+    },
+  };
 
   return (
     <Bar className="finances__graphs" options={options} data={barChartData} />

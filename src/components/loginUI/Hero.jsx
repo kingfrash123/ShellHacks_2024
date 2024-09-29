@@ -1,5 +1,8 @@
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+
+import { Link } from "react-router-dom";
+
 function Hero() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -61,7 +64,7 @@ function Hero() {
               />
             </div>
             <button type="submit" className="limit__button">
-              Login
+              <Link to="/src/pages/Dashboard.jsx">Login</Link>
             </button>
           </form>
         </div>

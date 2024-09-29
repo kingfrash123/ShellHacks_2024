@@ -24,22 +24,29 @@ ChartJS.register(
 
 function LineGraph() {
   const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        labels: {
-          color: "#000",
-          font: {
-            size: 18,
-          },
+    maintainAspectRatio: false,
+    scales: {
+      yAxes: {
+        grid: {
+          drawBorder: true,
+          color: "#FFFFFF",
         },
-        position: "bottom",
-        color: "#000",
+        ticks: {
+          beginAtZero: true,
+          color: "white",
+          fontSize: 12,
+        },
       },
-      title: {
-        display: true,
-        text: "Finances",
-        color: "#000",
+      xAxes: {
+        grid: {
+          drawBorder: true,
+          color: "#FFFFFF",
+        },
+        ticks: {
+          beginAtZero: true,
+          color: "white",
+          fontSize: 12,
+        },
       },
     },
   };

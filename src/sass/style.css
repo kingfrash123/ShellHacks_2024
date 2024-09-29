@@ -32,6 +32,10 @@ body {
   color: #e4e4e4;
 }
 
+a {
+  color: #e4e4e4;
+}
+
 .container {
   max-width: 140rem;
   margin: 0 auto;
@@ -759,7 +763,8 @@ body {
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  padding-top: 6.4rem;
+  padding-top: 8rem;
+  padding-bottom: 12.8rem;
   gap: 4rem;
 }
 .finances__dataTwo {
