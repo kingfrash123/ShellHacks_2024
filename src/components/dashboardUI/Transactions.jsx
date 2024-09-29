@@ -1,27 +1,40 @@
 import { useState } from "react";
+import axios from "axios";
 
 function Transactions() {
   const [account, setAccount] = useState("");
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState(0);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (account && category && amount) {
+      try {
+        const response = await axios.post('http://localhost:3000/inputTransactions/input', {
+          account: account,
+          category: category,
+          price: amount
+        });
+        console.log('Response:', response.data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
 
     console.log("Account: ", account);
     console.log("Category: ", category);
     console.log("Amount: ", amount);
   };
 
-  /*
-  const handleClick = () => {
-    // limitForm.classList.replace("marginBottomHelper", "marginBottomHelperNone");
-    // if (company && limit) {
-    //   limitTerminal.classList.remove("display-none");
-    // }
-    // console.log("clicked");
+  const handleMockData = async () => {
+    try {
+      const response = await axios.get('http://localhost:3000/randTransactions/generate');
+      console.log('Mock Data Response:', response.data);
+    } catch (error) {
+      console.error('Error fetching mock data:', error);
+    }
   };
-*/
 
   return (
     <div className="limit__container">
@@ -66,8 +79,11 @@ function Transactions() {
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
-        <button type="submit" onSubmit={handleSubmit} className="limit__button">
+        <button type="submit" className="limit__button">
           Set Limit
+        </button>
+        <button type="button" onClick={handleMockData} className="limit__button">
+          Mock Data
         </button>
       </form>
     </div>

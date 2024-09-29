@@ -57,7 +57,7 @@ router.post('/accounts', (req, res) => {
 
 // POST /userDashboard/categories - Create a new spending category
 router.post('/categories', (req, res) => {
-    const { category, amount } = req.body;
+    const {category, amount } = req.body;
     const data = readData();
 
     // Ensure spendingCategories is an array

@@ -21,6 +21,7 @@ function Limit({ firstAccount, chooseAccount, chooseCompany, chooseLimit }) {
       setShowComponent(true);
       try {
         const response = await axios.post('http://localhost:3000/userDashbord/categories', {
+          acount: account,
           category: company,
           amount: limit
         });
@@ -33,6 +34,7 @@ function Limit({ firstAccount, chooseAccount, chooseCompany, chooseLimit }) {
 
     limitListOne.innerHTML += `       
              <>
+              <p>${props.account}</p>
               <p>${props.company}</p>
               <p>${props.limit}</p>
             </>`;

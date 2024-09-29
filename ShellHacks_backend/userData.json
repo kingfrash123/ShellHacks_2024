@@ -2,8 +2,8 @@
   "account1": "green",
   "account1total": 407,
   "account2": "blue",
-  "account2total": 546.87,
-  "userTotal": 953.87,
+  "account2total": 500.87,
+  "userTotal": 907.87,
   "spendingCategories": [
     {
       "category": "food",
@@ -32,105 +32,390 @@
     {
       "category": "frog",
       "amount": 450
+    },
+    {
+      "category": "womd",
+      "amount": 300
+    },
+    {
+      "category": "womd",
+      "amount": 300
+    },
+    {
+      "category": "womd",
+      "amount": 300
+    },
+    {
+      "category": "womd",
+      "amount": 234
+    },
+    {
+      "category": "womd",
+      "amount": 12
     }
   ],
   "transactions": [
     {
-      "acount": 1,
-      "name": "Company B",
-      "category": "food",
-      "cost": 34.69
-    },
-    {
-      "acount": 1,
+      "acount": 2,
       "name": "Company D",
       "category": "food",
-      "cost": 24.17
+      "cost": 13.72
     },
     {
-      "acount": 2,
-      "name": "Company B",
-      "category": "food",
-      "cost": 56.85
-    },
-    {
-      "acount": 2,
+      "acount": 1,
       "name": "Company A",
       "category": "food",
-      "cost": 35.59
+      "cost": 26.4
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "food",
+      "cost": 1.61
+    },
+    {
+      "acount": 1,
+      "name": "Company A",
+      "category": "food",
+      "cost": 26.71
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "food",
+      "cost": 38.43
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "treats",
+      "cost": 58.74
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "treats",
+      "cost": 18.28
     },
     {
       "acount": 2,
       "name": "Company E",
-      "category": "food",
-      "cost": 40.43
+      "category": "treats",
+      "cost": 26.25
     },
     {
-      "acount": 2,
+      "acount": 1,
       "name": "Company A",
       "category": "treats",
-      "cost": 43.89
+      "cost": 49.02
     },
     {
       "acount": 1,
       "name": "Company C",
       "category": "treats",
-      "cost": 46.13
+      "cost": 42.57
     },
     {
       "acount": 1,
+      "name": "Company E",
+      "category": "treats",
+      "cost": 27.12
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "treats",
+      "cost": 22.66
+    },
+    {
+      "acount": 2,
       "name": "Company D",
       "category": "treats",
-      "cost": 13.48
+      "cost": 1.6
     },
     {
       "acount": 1,
       "name": "Company A",
       "category": "treats",
-      "cost": 25.58
-    },
-    {
-      "acount": 1,
-      "name": "Company E",
-      "category": "treats",
-      "cost": 46.58
+      "cost": 39.19
     },
     {
       "acount": 2,
-      "name": "Company C",
+      "name": "Company B",
       "category": "treats",
-      "cost": 20.89
-    },
-    {
-      "acount": 1,
-      "name": "Company E",
-      "category": "treats",
-      "cost": 12.84
-    },
-    {
-      "acount": 2,
-      "name": "Company D",
-      "category": "treats",
-      "cost": 6.97
-    },
-    {
-      "acount": 1,
-      "name": "Company E",
-      "category": "treats",
-      "cost": 11.19
+      "cost": 58.17
     },
     {
       "acount": 1,
       "name": "Company B",
       "category": "treats",
+      "cost": 50.19
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "treats",
+      "cost": 1.56
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "treats",
+      "cost": 13.74
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "treats",
+      "cost": 18.16
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "treats",
+      "cost": 21.24
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "toys",
+      "cost": 8.59
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "toys",
+      "cost": 3.7
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "toys",
+      "cost": 14.78
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "toys",
+      "cost": 13.41
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "toys",
+      "cost": 8.04
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "apple",
+      "cost": 101.22
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "apple",
+      "cost": 115.01
+    },
+    {
+      "acount": 1,
+      "name": "Company A",
+      "category": "apple",
+      "cost": 75.16
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "apple",
+      "cost": 55.45
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "apple",
+      "cost": 27.58
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "frog",
+      "cost": 82
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "frog",
+      "cost": 37.44
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "frog",
+      "cost": 33.07
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "frog",
+      "cost": 97.08
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "frog",
+      "cost": 85.07
+    },
+    {
+      "acount": 2,
+      "name": "Company E",
+      "category": "womd",
+      "cost": 62.82
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 41.46
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 52.18
+    },
+    {
+      "acount": 2,
+      "name": "Company E",
+      "category": "womd",
+      "cost": 21.44
+    },
+    {
+      "acount": 1,
+      "name": "Company A",
+      "category": "womd",
+      "cost": 27.85
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 59.17
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 34.82
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "womd",
+      "cost": 67.95
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 42.3
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "womd",
+      "cost": 80.5
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 58.38
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 13.46
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 72.62
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 3.31
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "womd",
+      "cost": 45.24
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 51.93
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 13.78
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 23.08
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 6.54
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "womd",
+      "cost": 59.38
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "womd",
       "cost": 3.57
     },
     {
-      "account": 1,
-      "name": "apple",
-      "category": "food",
-      "cost": 50
+      "acount": 1,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 3.59
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "womd",
+      "cost": 0.96
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 2.25
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "womd",
+      "cost": 1.31
     }
   ],
-  "name": "John e"
+  "name": "John e",
+  "password": "23456"
 }
