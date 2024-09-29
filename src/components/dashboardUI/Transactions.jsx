@@ -13,6 +13,7 @@ function Transactions() {
     console.log("Amount: ", amount);
   };
 
+  /*
   const handleClick = () => {
     // limitForm.classList.replace("marginBottomHelper", "marginBottomHelperNone");
     // if (company && limit) {
@@ -20,6 +21,7 @@ function Transactions() {
     // }
     // console.log("clicked");
   };
+*/
 
   return (
     <div className="limit__container">
