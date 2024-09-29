@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LimitTerminal from "./LimitTerminal";
+import axios from "axios";
 // import Status from "/src/components/dashboardUI/Status.jsx";
 
 const limitForm = document.querySelector(".limit__form");
@@ -14,11 +15,19 @@ function Limit({ firstAccount, chooseAccount, chooseCompany, chooseLimit }) {
 
   const [showComponent, setShowComponent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (account && company && limit) {
       setShowComponent(true);
-      createCategories(company, limit);
+      try {
+        const response = await axios.post('http://localhost:3000/userDashbord/categories', {
+          category: company,
+          amount: limit
+        });
+        console.log('Response:', response.data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
       //   limitTerminal.classList.remove("display-none");
     }
 

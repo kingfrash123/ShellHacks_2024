@@ -3,11 +3,13 @@ import fs from 'fs';
 import dashboardRouter from "./userDashbord.js";
 import randomRouter from "./randTransactions.js";
 import inputRouter from "./inputTransactions.js";
+import cors from 'cors';
 
 const app = express();
 const PORT = 3000; // Choose any port you want
 
 app.use(express.json());
+app.use(cors());
 
 // Define your routes here
 app.get('/', (req, res) => {

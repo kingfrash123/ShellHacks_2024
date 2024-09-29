@@ -65,12 +65,20 @@ function updateAccount() {
 
         try {
             const userData = JSON.parse(data);
+            const jsonCat = userData.spendingCategories;
             if (responses.account == 1) {
                 userData.account1total -= responses.cost;
             } else if (responses.account == 2) {
                 userData.account2total -= responses.cost;
             }
             userData.userTotal = userData.account1total + userData.account2total;
+
+            const categoryToUpdate = jsonCat.find(cat => cat.category === responses.category);
+            if (categoryToUpdate) {
+                categoryToUpdate.amount -= responses.cost;
+            } else {
+                console.log('Category not found');
+            }
 
             console.log(`Updated userTotal: ${userData.userTotal}`);
             console.log(`Updated account${responses.account}total: ${responses.account == 1 ? userData.account1total : userData.account2total}`);
