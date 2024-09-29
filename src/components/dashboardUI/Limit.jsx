@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import LimitTerminal from "./LimitTerminal";
 
 const limitForm = document.querySelector(".limit__form");
@@ -8,7 +8,6 @@ const limitTerminal = document.getElementById("limit__terminal");
 function Limit() {
   const [company, setCompany] = useState("");
   const [limit, setLimit] = useState(0);
-  const limite = useRef(limit);
 
   const [showComponent, setShowComponent] = useState(false);
 
@@ -16,6 +15,7 @@ function Limit() {
     e.preventDefault();
     if (company && limit) {
       setShowComponent(true);
+      //   limitTerminal.classList.remove("display-none");
     }
     console.log("Company:", company);
     console.log("Limit:", limit);

@@ -9,13 +9,11 @@ function Home() {
       <div className="brightnessWorkaround">
         <h1 className="dashboardHeaderText">Dashboard</h1>
         <div className="dashboardContainer">
-          <div className="forceFlex">
-            <div className="limit">
-              <Limit />
-            </div>
-            <div className="finances">
-              <Finances />
-            </div>
+          <div className="limit">
+            <Limit />
+          </div>
+          <div className="finances">
+            <Finances />
           </div>
         </div>
       </div>
