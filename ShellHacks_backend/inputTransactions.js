@@ -1,47 +1,57 @@
+
+
+import express from 'express';
 import fs from 'fs';
-import readline from 'readline';
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+
+const router = express.Router();
+const DATA_FILE = 'userData.json'; // Adjust the path if needed
+
+
+// Middleware to read and parse the JSON data
+const readData = () => {
+    if (fs.existsSync(DATA_FILE)) {
+        const data = fs.readFileSync(DATA_FILE, 'utf8');
+        return JSON.parse(data);
+    }
+    return {};
+};
+
+router.post('/input', (req, res) => {
+    const { account, company, category,price } = req.body;
+    getAccount(account, company, category,price);
+
+    res.status(201).json({ message: 'Setup complete'});
 });
+
 
 const responses = {};
 
-function getAccount(){
-    rl.question("Enter the account where the purchase came from (1 or 2): ",(account) => {
+function getAccount(account, company, category,price){
         responses.account = account;
         console.log(account);
         //saveResponses();
-        getCompanyName();
-    });
+        getCompanyName(company, category,price);
 }
 
-function getCompanyName(){
-    rl.question("Enter company name: ",(name) => {
-        responses.name = name;
-        console.log(name);
+function getCompanyName( company, category,price){
+        responses.name = company;
+        console.log(company);
         //saveResponses();
-        getCategory();
-    });
+        getCategory(category,price);
 }
 
-function getCategory(){
-    rl.question("Enter purchasing category: ",(category) => {
+function getCategory(category,price){
         responses.category = category;
         console.log(category);
         //saveResponses();
-        getPrice();
-    });
+        getPrice(price);
 }
 
-function getPrice(){
-    rl.question("Enter price of item: ",(price) => {
+function getPrice(price){
         responses.cost = parseFloat(price);
         console.log(price);
         //saveResponses();
-        rl.close();
         updateAccount();
-    });
 }
 
 function updateAccount() {
@@ -88,4 +98,4 @@ function saveResponses(userData) {
     console.log('');
 }
 
-getAccount();
+export default router;

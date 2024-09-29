@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LimitTerminal from "./LimitTerminal";
+import {createCategories} from "../../backend/testBack";
 
 const limitForm = document.querySelector(".limit__form");
 const limitContainer = document.querySelector(".limit__container");
@@ -15,6 +16,7 @@ function Limit() {
     e.preventDefault();
     if (company && limit) {
       setShowComponent(true);
+      createCategories(company, limit);
       //   limitTerminal.classList.remove("display-none");
     }
     console.log("Company:", company);

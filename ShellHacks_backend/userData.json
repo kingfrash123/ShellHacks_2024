@@ -1,0 +1,114 @@
+{
+  "account1": "green",
+  "account1total": 457,
+  "account2": "blue",
+  "account2total": 546.87,
+  "userTotal": 1003.87,
+  "spendingCategories": [
+    {
+      "category": "food",
+      "amount": 200
+    },
+    {
+      "category": "treats",
+      "amount": 200
+    },
+    {
+      "category": "treats",
+      "amount": 200
+    }
+  ],
+  "transactions": [
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "food",
+      "cost": 34.69
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "food",
+      "cost": 24.17
+    },
+    {
+      "acount": 2,
+      "name": "Company B",
+      "category": "food",
+      "cost": 56.85
+    },
+    {
+      "acount": 2,
+      "name": "Company A",
+      "category": "food",
+      "cost": 35.59
+    },
+    {
+      "acount": 2,
+      "name": "Company E",
+      "category": "food",
+      "cost": 40.43
+    },
+    {
+      "acount": 2,
+      "name": "Company A",
+      "category": "treats",
+      "cost": 43.89
+    },
+    {
+      "acount": 1,
+      "name": "Company C",
+      "category": "treats",
+      "cost": 46.13
+    },
+    {
+      "acount": 1,
+      "name": "Company D",
+      "category": "treats",
+      "cost": 13.48
+    },
+    {
+      "acount": 1,
+      "name": "Company A",
+      "category": "treats",
+      "cost": 25.58
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "treats",
+      "cost": 46.58
+    },
+    {
+      "acount": 2,
+      "name": "Company C",
+      "category": "treats",
+      "cost": 20.89
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "treats",
+      "cost": 12.84
+    },
+    {
+      "acount": 2,
+      "name": "Company D",
+      "category": "treats",
+      "cost": 6.97
+    },
+    {
+      "acount": 1,
+      "name": "Company E",
+      "category": "treats",
+      "cost": 11.19
+    },
+    {
+      "acount": 1,
+      "name": "Company B",
+      "category": "treats",
+      "cost": 3.57
+    }
+  ],
+  "name": "John e"
+}

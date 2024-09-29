@@ -4,13 +4,6 @@
 import fs from 'fs';
 
 
-import readline from 'readline';
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
 const responses = {};
 
 var name = "temp";
@@ -19,7 +12,7 @@ var  accountTotal1 = 0;
 var account2total = 0;
 console.log(name);
 
-function getName() {
+/*function getName() {
     rl.question("Enter name: ", (name) => {
         responses.name = name;
         console.log(name);
@@ -27,17 +20,17 @@ function getName() {
         getAccount1();
 
     })
-}
+}*/
 
-function getAccount1() {
+/*function getAccount1() {
     rl.question("Enter name of first Account: ", (account1) => {
         responses.account1 = account1;
         saveResponses();
-        getAccount1Total();
+        getAccountTotal1();
     })
-}
+}*/
 
-function getAccount1Total() {
+/*function getAccountTotal1() {
     rl.question("Enter the ammount of money in first account: ", (accountTotal1) => {
         //globalAccount1Total = account1total;
         responses.account1total = parseFloat(accountTotal1);
@@ -61,7 +54,7 @@ function getAccountTotal2() {
         saveResponses();
         createCategories();     
     })
-}
+}*/
 
 
 function saveResponses() {
@@ -80,7 +73,7 @@ function saveResponses() {
     console.log('Response saved.');
     console.log('');
 }
-getName();
+//getName();
 
 function readBack(){
     console.log('Setup complete');
@@ -126,23 +119,13 @@ function readBack(){
     });
 }
 
-function createCategories(){
-    
-    rl.question("Create new purchase category (enter 'n' to stop): ", (cat) => {
-        if(cat === 'n') {
-            rl.close();
-            readBack();
-        } else{
-            rl.question("Enter amount for " + cat + ":", (amount) => {
-                if (!responses.spendingCategories) {
-                    responses.spendingCategories = [];
-                }
-                responses.spendingCategories.push({ category: cat, amount: parseFloat(amount) });
-                saveResponses();
-                createCategories();
-            });
-        }
-    });
+function createCategories(company, limit){
+    if (!responses.spendingCategories) {
+        responses.spendingCategories = [];
+    }
+    responses.spendingCategories.push({ category: company, amount: parseFloat(limit) });
+    saveResponses();
 }
 
 
+export {createCategories};

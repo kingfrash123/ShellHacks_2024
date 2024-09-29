@@ -1,4 +1,24 @@
 import fs from 'fs';
+import express from 'express';
+
+const router = express.Router();
+const DATA_FILE = 'userData.json'; // Adjust the path if needed
+
+// Middleware to read and parse the JSON data
+const readData = () => {
+    if (fs.existsSync(DATA_FILE)) {
+        const data = fs.readFileSync(DATA_FILE, 'utf8');
+        return JSON.parse(data);
+    }
+    return {};
+};
+
+router.get('/generate', (req, res) => {
+    // Read existing data
+    main();
+    res.status(201).json({ message: 'data generated'});
+});
+
 // Function to read and parse JSON data
 function getCat() {
     console.log('reading json data');
@@ -28,12 +48,14 @@ function generateTransactions(categories) {
         console.log(`Category: ${category.category}, Full Amount: ${category.amount}, Divided Amount: ${dividedAmount}`);
         
         for (let i = 0; i < 5; i++) {
+            const randomAcount = Math.floor(Math.random() * 2) + 1;
             const randomCost = (Math.random() * ((dividedAmount * 1.5) - 0.50) + 0.50).toFixed(2);
             const randomName = companies[Math.floor(Math.random() * companies.length)];
             console.log(`Transaction Cost: ${randomCost}, Transaction Category: ${category.category}, Transaction Name: ${randomName}`);
 
             // Create a transaction object
             const transaction = {
+                acount: randomAcount,
                 name: randomName,
                 category: category.category,
                 cost: parseFloat(randomCost), // Convert to float for consistency
@@ -79,4 +101,4 @@ function main() {
 
 }
 
-main();
+export default router;
