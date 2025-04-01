@@ -1,13 +1,47 @@
-<<<<<<< HEAD
-# ShellHacks_2024
-ShellHacks 20224 Project in the making
-=======
-# React + Vite
+#  JavaScript Budget tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2-day Hackathon Budget tracking web application enabling users to track spending
+habits and manage custom budget categories
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Contact](#contact)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> firstBranch
+## Features
+- Allows users to track spending habits and manage custom budget categories.
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/kingfrash123/ShellHacks_2024.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the project:
+   ```sh
+   npm start
+   ```
+
+## Technologies Used
+
+List the programming languages, frameworks, and tools used, e.g.,
+- JavaScript
+- Vite
+- Vue.js
+- Express
+- React
+- CSS
+
+## Contact
+
+For any inquiries, reach out to:
+- **King Primo**  
+- Email: kingprimo8@gmail.com 
+- LinkedIn: [YourProfile](https://linkedin.com/in/king-primo)  
+- GitHub: [YourUsername](https://github.com/kingfrash123)
+
