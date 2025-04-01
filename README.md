@@ -29,7 +29,6 @@ habits and manage custom budget categories
 
 ## Technologies Used
 
-List the programming languages, frameworks, and tools used, e.g.,
 - JavaScript
 - Vite
 - Vue.js
@@ -42,6 +41,6 @@ List the programming languages, frameworks, and tools used, e.g.,
 For any inquiries, reach out to:
 - **King Primo**  
 - Email: kingprimo8@gmail.com 
-- LinkedIn: [YourProfile](https://linkedin.com/in/king-primo)  
-- GitHub: [YourUsername](https://github.com/kingfrash123)
+- LinkedIn: [King Primo](https://linkedin.com/in/king-primo)  
+- GitHub: [kingfrash23](https://github.com/kingfrash123)
 
